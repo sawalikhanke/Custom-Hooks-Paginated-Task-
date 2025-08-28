@@ -1,0 +1,28 @@
+.skeleton-card {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-title {
+  height: 20px;
+  width: 60%;
+  background: #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.skeleton-body {
+  height: 14px;
+  width: 90%;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+@keyframes pulse {
+  0% { background-color: #f0f0f0; }
+  50% { background-color: #e0e0e0; }
+  100% { background-color: #f0f0f0; }
+}
