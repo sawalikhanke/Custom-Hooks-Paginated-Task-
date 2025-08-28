@@ -1,69 +1,28 @@
-# React + TypeScript + Vite
+📖 Paginated Posts App:
+A simple React + TypeScript project that demonstrates how to build paginated and filterable post listings using TanStack Query
+ and axios.
+It includes a custom hook (usePaginatedPosts & useInfinitePosts) for fetching data with pagination, filtering, and infinite scroll support.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
 
-Currently, two official plugins are available:
+✅ Pagination with next/previous buttons
+✅ Filter posts by title keyword
+✅ Custom hooks for clean data-fetching logic
+✅ TanStack Query for caching & background updates
+✅ Infinite scrolling option with useInfiniteQuery
+✅ Responsive and clean UI without Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+src/
+ ├── hooks/
+ │    ├── usePaginatedPosts.ts  
+ │    └── useInfinitePosts.ts    
+ ├── components/
+ │    └── Pagination.tsx         
+ ├── pages/
+ │    ├── PaginatedPosts.tsx     
+ │    └── InfinitePosts.tsx      
+ ├── App.tsx                     
+ └── main.tsx    
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ ![App Screenshot](<img width="1855" height="911" alt="dnjjknk" src="https://github.com/user-attachments/assets/1307ba55-b212-482d-9152-a8b3d128a129" />
+)
